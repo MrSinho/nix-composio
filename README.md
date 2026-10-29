@@ -8,11 +8,11 @@ executable.
 ## Run or install the flake package
 
 ```console
-nix run github:ABoustani/nix-composio -- --version
-nix profile install github:ABoustani/nix-composio
+nix run github:mrsinho/nix-composio -- --version
+nix profile install github:mrsinho/nix-composio
 ```
 
-For a local checkout, replace `github:ABoustani/nix-composio` with `.`.
+For a local checkout, replace `github:mrsinho/nix-composio` with `.`.
 
 ## NixOS module
 
@@ -20,7 +20,7 @@ Add the flake input and module to your NixOS configuration:
 
 ```nix
 {
-  inputs.nix-composio.url = "github:ABoustani/nix-composio";
+  inputs.nix-composio.url = "github:mrsinho/nix-composio";
 
   outputs = { nixpkgs, nix-composio, ... }: {
     nixosConfigurations.my-host = nixpkgs.lib.nixosSystem {
