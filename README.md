@@ -14,7 +14,7 @@ nix profile install github:mrsinho/nix-composio
 
 For a local checkout, replace `github:mrsinho/nix-composio` with `.`.
 
-## NixOS module
+## Add flake declaratively
 
 Add the flake input and module to your NixOS configuration:
 
